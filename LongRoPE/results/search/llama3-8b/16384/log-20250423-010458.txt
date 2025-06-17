@@ -1,0 +1,48 @@
+[04-23 01:04 | /home/chendong/llms/LongRoPE/evolution/search.py | INFO]
+Initialize server on host=127.0.0.1, port=35303
+
+[04-23 01:05 | /home/chendong/llms/LongRoPE/evolution/../evolution/algorithms/genetic_base.py | INFO]
+Evaluator [addr=('127.0.0.1', 55552), device=0] connected 
+
+[04-23 01:05 | /home/chendong/llms/LongRoPE/evolution/../evolution/algorithms/genetic_base.py | INFO]
+Evaluator [addr=('127.0.0.1', 41964), device=1] connected 
+
+[04-23 01:05 | /home/chendong/llms/LongRoPE/evolution/../evolution/algorithms/genetic_base.py | INFO]
+Evaluator [addr=('127.0.0.1', 55552), device=0] model loaded
+
+[04-23 01:05 | /home/chendong/llms/LongRoPE/evolution/../evolution/algorithms/genetic_base.py | INFO]
+Evaluator [addr=('127.0.0.1', 41964), device=1] model loaded
+
+[04-23 01:05 | /home/chendong/llms/LongRoPE/evolution/search.py | INFO]
+Loading model config: /data/model/Meta-Llama-3-8B
+
+[04-23 01:05 | /home/chendong/llms/LongRoPE/evolution/search.py | INFO]
+Load hyper-parameters from /home/chendong/llms/LongRoPE/evolution/default_hyper_params/dim_mono.json
+
+[04-23 01:05 | /home/chendong/llms/LongRoPE/evolution/search.py | INFO]
+Generate initial factors by YaRN
+
+[04-23 01:05 | /home/chendong/llms/LongRoPE/evolution/search.py | INFO]
+Initial factors: [1.        1.        1.        1.        1.        1.        1.
+ 1.        1.        1.        1.        1.        1.        1.
+ 1.        1.        1.        1.        1.        1.0588236 1.117647
+ 1.1764705 1.2352941 1.2941177 1.3529412 1.4117647 1.4705882 1.5294118
+ 1.5882354 1.6470588 1.7058823 1.7647059 1.8235295 1.882353  1.9411764
+ 2.        2.        2.        2.        2.        2.        2.
+ 2.        2.        2.        2.        2.        2.        2.
+ 2.        2.        2.        2.        2.        2.        2.
+ 2.        2.        2.        2.        2.        2.        2.
+ 2.       ]
+
+[04-23 01:10 | /home/chendong/llms/LongRoPE/evolution/../evolution/algorithms/genetic_base.py | INFO]
+Start Evolution Search
+
+[04-23 01:10 | /home/chendong/llms/LongRoPE/evolution/../evolution/algorithms/genetic_base.py | INFO]
+[Iter #001 Best] [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.058823585510254, 1.1176470518112183, 1.1676470041275024, 1.2352941036224365, 1.2452940940856934, 1.2752940654754639, 1.4452940225601196, 1.470588207244873, 1.529411792755127, 1.5882353782653809, 1.5982353687286377, 1.638235330581665, 1.7647058963775635, 1.8235294818878174, 1.8823529481887817, 1.941176414489746, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0] => 7.489549160003662
+
+[04-23 01:13 | /home/chendong/llms/LongRoPE/evolution/../evolution/algorithms/genetic_base.py | INFO]
+[Iter #002 Best] [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.058823585510254, 1.1176470518112183, 1.1676470041275024, 1.2352941036224365, 1.2452940940856934, 1.2752940654754639, 1.4452940225601196, 1.470588207244873, 1.529411792755127, 1.5882353782653809, 1.5982353687286377, 1.638235330581665, 1.7647058963775635, 1.8235294818878174, 1.8823529481887817, 1.941176414489746, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0] => 7.489549160003662
+
+[04-23 01:16 | /home/chendong/llms/LongRoPE/evolution/../evolution/algorithms/genetic_base.py | INFO]
+[Iter #003 Best] [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.058823585510254, 1.1176470518112183, 1.1676470041275024, 1.2352941036224365, 1.2452940940856934, 1.2752940654754639, 1.4452940225601196, 1.470588207244873, 1.529411792755127, 1.5882353782653809, 1.5982353687286377, 1.638235330581665, 1.7647058963775635, 1.8235294818878174, 1.8823529481887817, 1.941176414489746, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0] => 7.489549160003662
+

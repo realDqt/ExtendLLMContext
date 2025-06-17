@@ -1,0 +1,9 @@
+[04-23 00:45 | /home/chendong/llms/LongRoPE/evolution/search.py | INFO]
+Initialize server on host=127.0.0.1, port=39357
+
+[04-23 00:45 | /home/chendong/llms/LongRoPE/evolution/../evolution/algorithms/genetic_base.py | INFO]
+Evaluator [addr=('127.0.0.1', 42110), device=0] connected 
+
+[04-23 00:45 | /home/chendong/llms/LongRoPE/evolution/../evolution/algorithms/genetic_base.py | INFO]
+Evaluator [addr=('127.0.0.1', 42126), device=1] connected 
+

@@ -26,3 +26,5 @@ python test_gpt2_finetuned.py
 python test_long_context.py
 ```
 
+### 2. LongRoPE
+See README in LongRoPE/

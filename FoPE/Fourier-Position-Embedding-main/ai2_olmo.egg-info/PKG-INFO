@@ -1,0 +1,94 @@
+Metadata-Version: 2.4
+Name: ai2-olmo
+Version: 0.4.0
+Summary: Open Language Model (OLMo)
+Author-email: Allen Institute for Artificial Intelligence <olmo@allenai.org>
+Project-URL: Homepage, https://github.com/allenai/OLMo
+Project-URL: Repository, https://github.com/allenai/OLMo
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torch<2.4,>=2.1
+Requires-Dist: ai2-olmo-core==0.1.0
+Requires-Dist: omegaconf
+Requires-Dist: rich
+Requires-Dist: boto3
+Requires-Dist: google-cloud-storage
+Requires-Dist: tokenizers
+Requires-Dist: packaging
+Requires-Dist: cached_path>=1.6.2
+Requires-Dist: transformers
+Requires-Dist: importlib_resources
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: mypy<1.4,>=1.0; extra == "dev"
+Requires-Dist: black<24.0,>=23.1; extra == "dev"
+Requires-Dist: isort<5.13,>=5.12; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-sphinx; extra == "dev"
+Requires-Dist: twine>=1.11.0; extra == "dev"
+Requires-Dist: setuptools; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Provides-Extra: train
+Requires-Dist: wandb; extra == "train"
+Requires-Dist: beaker-gantry; extra == "train"
+Requires-Dist: click; extra == "train"
+Requires-Dist: torchmetrics; extra == "train"
+Requires-Dist: smashed[remote]>=0.21.1; extra == "train"
+Requires-Dist: safetensors; extra == "train"
+Requires-Dist: datasets; extra == "train"
+Requires-Dist: scikit-learn; extra == "train"
+Requires-Dist: msgspec>=0.14.0; extra == "train"
+Provides-Extra: all
+Requires-Dist: ai2-olmo[dev,train]; extra == "all"
+
+# Fourier-Position-Embedding
+
+This repository contains the code for the paper "Fourier Position Embedding: Enhancing Attention’s Periodic Extension for Length Generalization".
+
+Our code is totally based on OLMo(<https://github.com/allenai/OLMo>). The core code of FoPE and main setup is available in the appendix of our paper, thus you can also integrate FoPE directly into any other repository.
+
+## Installation
+
+To install from source, run the following commands:
+
+```
+cd Fourier-Position-Embedding
+pip install -e .[all]
+```
+
+## Data Downloading
+
+The data preprocessing has been completed by the authors of [OLMo](https://github.com/allenai/OLMo), and you only need to download the preprocessed data for training.
+
+To download the C4 dataset, run the following script:
+
+```
+cd Fourier-Position-Embedding
+bash commands/run_download.sh
+```
+
+If you want to modify the saving directory, please change the default ```--local_filepath``` in ```scripts/download_data.py```.
+
+## Pre-training
+
+The following script shows how to pre-train a 60M model on the C4 dataset:
+
+```
+cd Fourier-Position-Embedding
+bash commands/run_pretrain.sh
+```
+
+The configs for other settings are available in the ```configs``` directory.
+
+## Fine-tuning
+
+The following script shows how to extrapolate a 60M model on the C4 dataset:
+
+```
+cd Fourier-Position-Embedding
+bash commands/run_finetune.sh
+```
+
+You may modify the ```eval_interval``` and ```save_interval_unsharded``` in the configs to get more fine-grained checkpoints.

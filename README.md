@@ -1,8 +1,6 @@
 # Extend LLM Context
 ANN Final Project
 
-
-
 ## 1. PEI(Positional Embedding Interpolation)
 
 1. Download gpt2 from hugging-face.
@@ -26,5 +24,10 @@ python test_gpt2_finetuned.py
 python test_long_context.py
 ```
 
-### 2. LongRoPE
+## 2. LongRoPE
+
 See README in LongRoPE/
+
+## 3. FoPE
+
+See README in FoPE/Fourier-Position-Embedding-main/
